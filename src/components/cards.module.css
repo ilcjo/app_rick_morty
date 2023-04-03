@@ -1,0 +1,8 @@
+.cards_container {
+    display: flex;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border-color: black;
+
+}
+

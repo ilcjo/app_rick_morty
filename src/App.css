@@ -1,0 +1,7 @@
+.App {
+   display: flex;
+   text-align: center;
+   background: rgb(23, 25, 32);
+   background: radial-gradient(circle, rgba(23, 25, 32, 1) 0%, rgba(64, 1, 14, 1) 100%);
+
+}
