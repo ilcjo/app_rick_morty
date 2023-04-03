@@ -4,8 +4,9 @@ import {
 } from './actions'
 
 
-const initialState = {
+const initialState = {     
     myFavorites: []
+   
 };
 
 export default function rootReducer(state = initialState, action) {

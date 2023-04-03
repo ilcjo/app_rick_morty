@@ -39,9 +39,11 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(delet){
+function mapDispatchToProps(delet){ 
   return{
     removeFav: (id) => delet(removeFav(id))
   };
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Favorites)
+
+

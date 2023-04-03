@@ -5,9 +5,10 @@ import validate from '../validation';
 
 export default function Login(props) {
 
+
     const [userData, setUserData] = useState({
         user: "",
-        password: " ",
+        password: "",  
     });
 
     const [errors, setErrors] = useState({
@@ -19,6 +20,7 @@ export default function Login(props) {
     function handleChange(event) {
         setUserData({
             ...userData,
+                 
             [event.target.name]: event.target.value
         })
         setErrors(
@@ -53,7 +55,7 @@ export default function Login(props) {
     }
     return (
 
-        <form  className={StyleSheet.container}onSubmit={handleSubmit}>
+        <form  className={StyleSheet.container} onSubmit={handleSubmit}>
             <label>Name:</label>
             <input
                 type="text"
