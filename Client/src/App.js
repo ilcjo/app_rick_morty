@@ -49,15 +49,19 @@ function App() {
    function onClose(id) {
       setCharacters((oldChars) => {
          return oldChars.filter((ch) => ch.id !== id)
-
       });
-
    }
+    
+    function logOut(){
+      setAccess(false)
+      navi('/')
+    } 
+
    return (
 
       <div className='App'>
       {
-         location.pathname === '/' ? null:<NavBar onSearch={onSearch} />
+         location.pathname === '/' ? null:<NavBar onSearch={onSearch} logOut={logOut}/>
       }
          <Routes>
             <Route path='/' element={<Login login={login}/> }></Route>

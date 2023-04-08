@@ -1,4 +1,4 @@
-import './Login.module.css'
+import  styles from '../styles/Login.module.css'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import validate from '../validation';
@@ -55,7 +55,7 @@ export default function Login(props) {
     }
     return (
 
-        <form  className={StyleSheet.container} onSubmit={handleSubmit}>
+        <form  className={styles.container} onSubmit={handleSubmit}>
             <label>Name:</label>
             <input
                 type="text"
